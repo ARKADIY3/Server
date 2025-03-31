@@ -5,8 +5,10 @@ import com.practicheskaya.server8.response.BaseResponse;
 import com.practicheskaya.server8.response.DataResponse;
 import com.practicheskaya.server8.response.ListResponse;
 import com.practicheskaya.server8.service.AuthorService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "Авторы", description = "Управление авторами")
 @RestController
 public class AuthorController {
     private final AuthorService authorService;

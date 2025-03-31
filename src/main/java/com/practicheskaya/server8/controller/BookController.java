@@ -5,8 +5,10 @@ import com.practicheskaya.server8.response.BaseResponse;
 import com.practicheskaya.server8.response.DataResponse;
 import com.practicheskaya.server8.response.ListResponse;
 import com.practicheskaya.server8.service.BookService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "Книги", description = "Управление книгами")
 @RestController
 public class BookController {
     private final BookService bookService;
